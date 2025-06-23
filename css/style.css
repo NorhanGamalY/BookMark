@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Pacifico";
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: "Righteous";
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+@font-face {
+    font-family: "Sans-Caption";
+    src: url(../fonts/PTSansCaption-Regular.ttf);
+}
+@font-face {
+    font-family: "BreeSerif";
+    src: url(../fonts/BreeSerif-Regular.ttf);
+}
+*::selection{
+    color: black ;
+    background-color: #FEC260;
+}
+body{
+    background-color: #F7ECDE !important;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+a{
+    color: white;
+}
+header{
+    margin: 3rem 0;
+}
+h1{
+font-family: "Pacifico";
+font-weight: 500;
+font-size: 3.125rem;
+line-height: 3.75rem;
+color: rgb(53, 46, 40);
+text-align: center;
+}
+h1 span{
+margin:2.5rem 0 ;
+position: relative;
+font-size: 3.125rem;
+}
+h1 span::after{
+content: "";
+width: 100%;
+position: absolute;
+height: 20px;
+bottom: 14px;
+left: 0;
+background-color: #FEC260;
+z-index: -1;
+transition: height 0.5s; 
+}
+h1 span:hover::after{
+height: 2.375rem;
+}
+/* ////////////////////////////////////// */
+
+#form-container{
+    border-bottom: .125rem black dotted;
+    border-top: .125rem black dotted;
+      font-family: "Sans-Caption", sans-serif;
+      font-weight: 600;
+
+}
+#form-container h2{
+      background-image: linear-gradient(to right, rgb(60, 165, 92), rgb(181, 172, 73));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Righteous";
+    font-size: 1.5625rem;
+    font-weight: 500;
+
+}
+
+#form-container input{
+width: 100%;
+margin: .625rem 0;
+border: 1px solid #CED4DA;
+padding: 8px;
+border-radius: .5rem;
+}
+input:focus {
+  box-shadow: 0 0 5px #FEC260;
+  outline: none;
+}
+
+#form-container label span{
+    margin-right: 9px;
+}
+#form-container button{
+    width: 13%;
+    background-color: #cd3b13;
+    border: none;
+    transition: all 0.5s;
+}
+#form-container button:hover{
+        background-color: #D1512D;
+
+}
+.w-90{
+    width: 90%;
+}
+.mark-table tr td{
+    text-align: center;
+}
+.mark-table button{
+    border-radius: .3125rem ;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+table{
+        font-family: "Righteous";
+text-transform: capitalize;
+}
+table thead{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.btn-visit{
+background-color:  #acc822;
+transition: all 0.5s;
+
+}
+.btn-visit:hover{
+background-color:#9EB23B;
+ }
+ .btn-visit i{
+    margin-right: 7px;
+ }
+.btn-delete{
+    background-color: #D30820;
+    transition: all 0.5s;
+}
+.btn-delete:hover{
+    background-color: #b72a3a;
+}
+.btn-delete a{
+    color: white !important;
+}
+.btn-delete i{
+    margin-right: 7px;
+}
+.alert-box{
+    position: absolute;
+     top: 0;
+     bottom: 0;
+  left: 0;
+  right: 0;
+    background-color: rgba(0,0,0,0.6);
+      display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.alert{
+ position: absolute;
+  z-index: 1000;
+  font-size: 28px;
+}
+.alert h3{
+    font-family: "BreeSerif";
+    font-size: 1.3125rem;
+
+}
+.red{
+    color: #F15F5D;
+    font-size: 16px;
+}
+.green{
+    color: #4DB748;
+        font-size: 16px;
+
+}
+.yellow{
+    color: #FEBE2E;
+        font-size: 16px;
+
+}
+.w-35{
+    width: 35%;
+}
+.close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+p{
+    font-size: 18px;
+}
+p i{
+    color: #BB4120;
+    border-radius: 50%;
+    border: #BB4120 2px solid;
+    padding: 2px;
+}

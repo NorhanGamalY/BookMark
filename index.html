@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarks</title>
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class=" my-4 py-3"> <span>Bookmarker</span> </h1>
+    </header>
+        <section>
+        <div class="container" id="form-container">
+            <form class="row" onsubmit="return handleSubmit()" action="">
+            <h2 class="text-center w-100 my-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i> </h2>
+            <label for="site-name"> <span><i class="fa-solid fa-book-bookmark"></i></span> Site Name</label><br>
+            <input type="text" id="site-name" placeholder=" BookMark Name"><br>
+            <label for="site-url"><span><i class="fa-solid fa-link"></i></span> Site URL</label><br>
+            <input type="text" id="site-url" placeholder=" WebSite URL">
+            <button type="submit" class="btn btn-primary mx-auto my-4">Submit</button>
+            </form>
+        </div>
+        </section>
+        <section>
+            <div class="container">
+                <table class="bg-white w-100 mt-4" >
+                    <thead class="w-100  mt-2 d-flex flex-wrap justify-content-center mark-table">
+                    <tr class="d-flex justify-content-between py-2 w-100 m-auto">
+                        <td class="w-25">index</td>
+                        <td class="w-25">Website Name</td>
+                        <td class="w-25">Visit</td>
+                        <td class="w-25">Delete</td>
+                    </tr>
+                    </thead>
+                    <tbody id="mark-table" class="mark-table"></tbody>
+                </table>
+            </div>
+        </section>
+<div class="alert-box  d-none" id="alert-box">
+        <div class="alert w-35 bg-white">
+            <div class="container">
+                <span class="red"><i class="fa-solid fa-circle"></i></span> <span class="yellow"><i class="fa-solid fa-circle"></i></span> <span class="green"><i class="fa-solid fa-circle"></i></span>
+                                    <span onclick="closeAlert()" class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+    <h3 class="my-2">Site Name or Url is not valid, Please follow the rules below :</h3>
+          <p><i class="fa-solid fa-arrow-right"></i> Site name must contain at least 3 characters</p>
+      <p><i class="fa-solid fa-arrow-right"></i> Site URL must be a valid one</p>
+            </div>
+        </div>
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+    
+</body>
+</html>
